@@ -100,7 +100,7 @@ resource "aws_instance" "web" {
   instance_type          = "t2.2xlarge"
   #key_name               = "Prakash-demo"
   #associate_public_ip_address  = true
-  count                  =  4
+  count                  =  1
 
   tags = {
     Name     = "Anthem-workshop-demo"
