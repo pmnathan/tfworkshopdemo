@@ -97,7 +97,7 @@ resource "aws_instance" "web" {
   ami                    = data.aws_ami.ubuntu.id
   subnet_id              = aws_subnet.hashi.id
   vpc_security_group_ids = [aws_security_group.hashi.id]
-  instance_type          = "t2.micro"
+  instance_type          = "t2.small"
   #key_name               = "Prakash-demo"
   #associate_public_ip_address  = true
   count                  =  2
