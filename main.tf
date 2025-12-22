@@ -106,6 +106,8 @@ resource "aws_instance" "web" {
     Name     = "hashi-test"
     Customer = "hashicorp"
   }
+  ebs_optimized = true
+  monitoring = true
 }
 
 #module "s3_bucket" {
